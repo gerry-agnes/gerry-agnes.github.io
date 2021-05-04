@@ -101,7 +101,7 @@ textarea {
   resize: none;
 }
 button {
-	width: 20%;
+	width: 100px;
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -125,7 +125,7 @@ button[type=submit]:hover {
     width: 100%;
     height: 55px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    background-color: White;
+    background-color: white;
     display: flex;
     overflow-x: auto;
 }
@@ -163,7 +163,9 @@ button[type=submit]:hover {
 	</head>
 	<body>	
 
-
+		<div class="fh5co-loader"></div>
+	
+		<div id="page">
 
 
 	<div id="fh5co-testimonial">
@@ -172,7 +174,8 @@ button[type=submit]:hover {
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 						<span>Best Wishes</span>
-						<h2 style="color:  rgba(111, 223, 235, 1);">Friends Wishes</h2>
+						<h3 style="font-family: 'Courgette', cursive; color: rgb(194, 191, 6); font-size: 40px;">Friends Wishes</h3>
+						
 					</div>
 				</div>
 				<div class="row">
@@ -182,35 +185,26 @@ button[type=submit]:hover {
 								<div class="item">
 									<div class="testimony-slide active text-center">
 										<figure>
-											<img src="images/couple-1.jpg" alt="user">
+											<img src="images/dinan.jpg" alt="user">
 										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
+										<span>Arnold Febryardi Sirait</span>
 										<blockquote>
-											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"</p>
+											<p>"Selamat Menikah Kakak gua yang cantik dan baik,semoga langgeng sampe hari tua nanti.Tahun depan gua nyusul..."</p>
 										</blockquote>
 									</div>
 								</div>
 								<div class="item">
 									<div class="testimony-slide active text-center">
 										<figure>
-											<img src="images/couple-2.jpg" alt="user">
+											<img src="images/gua.jpg" alt="user">
 										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
+										<span>Aldo Sirait</span>
 										<blockquote>
 											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, at the coast of the Semantics, a large language ocean."</p>
 										</blockquote>
 									</div>
 								</div>
-								<div class="item">
-									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-3.jpg" alt="user">
-										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-										<blockquote>
-											<p>"Far far away, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-										</blockquote>
-									</div>
+								
 								</div>
 							</div>
 						</div>
@@ -219,39 +213,41 @@ button[type=submit]:hover {
 			</div>
 		</div>
 	</div>
-	<div class="row animate-box" style="background-color:  #ccc;">
-		<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-			<br><br><br><h5>RSVP</h5>
-			<p>Silahkan Isi formulir untuk memberi tahu kami bahwa Anda akan hadir. Terima kasih </p>
+	<div id="fh5co-gallery" class="fh5co-section-gray" style="background-image: url(images/bg-form.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h3 style="font-family: 'Courgette', cursive;">RSVP</h3>
+					<p style="color: maroon; font-family: 'Courgette', cursive;">Silahkan isi formulir untuk memberi tahu kami bahwa Anda akan hadir. Terima kasih </p>
+					<div class="containerfo">
+						<div class="alert" id="alerts">
+							<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+							<strong>Terimakasih! </strong>Nama dan Pesan anda sudah kami terima.
+						  </div>
+						  <form name="rsvp-wedding">
+							<label for="fname">Name</label>
+							<input type="text" id="fname" name="nama">
+						
+							<label for="lname">Email</label><br>
+							<input type="email" id="lname" name="email" ><br>
+						
+							<label for="subject">Ucapan & Doa</label>
+							<textarea id="subject" name="pesan"  style="height:200px"></textarea>
+						
+							<button type="submit" id="kirim"  >Kirim</button>
+							<button  disabled id="loading" style="display: none;">Loading...</button>
+						  </form>
+						</div>
+				</div>
+			</div>
 		</div>
 	</div>
-
-<div class="containerfo">
-	<div class="alert" id="alerts">
-		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-		<strong>Terimakasih! </strong>Nama dan Pesan anda sudah kami terima.
-	  </div>
-  <form name="rsvp-wedding">
-    <label for="fname">Name</label>
-    <input type="text" id="fname" name="nama">
-
-    <label for="lname">Email</label><br>
-    <input type="email" id="lname" name="email" ><br>
-
-    <label for="subject">Ucapan & Doa</label>
-    <textarea id="subject" name="pesan"  style="height:200px"></textarea>
-
-    <button type="submit" id="kirim"  >Kirim</button>
-	<button  disabled id="loading" style="display: none;">Loading...</button>
-  </form>
-</div>
-
 	
 	<div class="col-md-12 text-center">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 				<br><br><br><br>
-				<span>Lokasi</span>
+				<h3 style="font-family: 'Courgette', cursive;">Lokasi</h3>
 				
 			
 			</div>
@@ -261,36 +257,33 @@ button[type=submit]:hover {
 								</div>
 		<!-- END map -->
 
-		<footer id="fh5co-footer" role="contentinfo">
-			<div class="container">
+		<footer id="fh5co-footer" role="contentinfo" >
+			<div style="background-image:url(images/footer.jpg); " >
+			<div class="container" >
 				<div class="row copyright">
 					<div class="col-md-12 text-center">
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-								<h2 style="color: rgba(111, 223, 235, 1);">Gerry & Agnes</h2>
-								<h3>Two Become One</h3>
+								<h2 style="color: maroon">Gerry & Agnes</h2>
 								<p>Terima Kasih</p>
 							</div>
 						</div>
 						<p>
-							<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
+							<small class="block">&copy;<a href="tampil.php">2016  HTML5.</a>  All Rights Reserved.</small> 
 							<small class="block">Designed by Aldo Sirait</small>
 						</p>
-						
-						<ul class="fh5co-social-icons">
-							<li><a href="https://www.youtube.com/channel/UCwqD6HcNldXBNQJ6iCZpvdw/featured"><i class="icon-youtube">Agnes Sintyke Sirait</i></a></li>
-							<li><a href="https://mobile.facebook.com/profile.php?id=1416440858&ref=content_filter"><i class="icon-facebook"></i>Gerry Selvano</a></li>
-							<li><a href="https://mobile.facebook.com/profile.php?id=100000120684025&ref=content_filter"><i class="icon-facebook">Agnes Sirait</i></a></li>
-							<li><a href="https://www.instagram.com/gerryselvano/"><i class="icon-instagram"></i>gerryselvano </a></li>
-							<li><a href="https://www.instagram.com/agnesssirait/"><i class="icon-instagram"></i>agnessirait</a></li>
-							
-						</ul>
-					
+							<ul class="fh5co-social-icons">
+								<li><a href="https://mobile.facebook.com/profile.php?id=1416440858&ref=content_filter"><i class="icon-facebook"></i>Gerry Selvano</a></li>
+								<li><a href="https://mobile.facebook.com/profile.php?id=100000120684025&ref=content_filter"><i class="icon-facebook">Agnes Sirait</i></a></li>
+								<li><a href="https://www.instagram.com/gerryselvano/"><i class="icon-instagram"></i>gerryselvano </a></li>
+								<li><a href="https://www.instagram.com/agnesssirait/"><i class="icon-instagram"></i>agnessirait</a></li>
+							</ul>					
 					</div>
 				</div>
-	
 			</div>
+		</div>
 		</footer>
+			</div>
 		<nav class="nav">
   <a href="index.html" class="nav__link ">
     <i class="material-icons nav__icon">smart_display</i>
@@ -368,7 +361,3 @@ button[type=submit]:hover {
 	  </script>
 	</body>
 </html>
-
-
-
-
