@@ -68,13 +68,13 @@
 <Style>
 .popup{
 	top: 40%;	
-  	background-color: #ccc;	
-	display: none;
+  	display: none;
+	
 }
 .contentBox{
-	position: relative;
-	 margin: 0 auto;
- 	 max-width: 700px;
+	position: fixed;
+	margin: 0 auto;
+ 	max-width: 700px;
   	height: 360px;
 	background: #ffffff;
 	border-radius: 20px;
@@ -83,7 +83,7 @@
 }
 .contentBox .imgBx{
 	position: relative;
-	width: 300px;
+	width: 100px;
 	height: 400px;
 	display: flex;
 	justify-content: center;
@@ -91,13 +91,13 @@
 }
 .contentBox .imgBx img{
 	position: relative;
-	max-width: 150px;
+	max-width: 100px;
 	z-index: 1;
 	border-radius: 50%;
 }
 .contentBox .content{
 	position: relative;
-	width: 300px;
+	width: 200px;
 	height: 400px;
 	display: flex;
 	justify-content: center;
