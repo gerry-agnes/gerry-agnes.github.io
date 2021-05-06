@@ -67,20 +67,42 @@
 	<![endif]-->
 <Style>
 .popup{
+	top: 40%;	
+  	background-color: #ccc;	
+	display: none;
+}
+.contentBox{
 	position: fixed;
-	top: 40%;
-	
-
 	 margin: 0 auto;
  	 max-width: 700px;
   	height: 360px;
-  	background-color: #ccc;
- 	 border-radius: 3px;
-	display: none;
+	background: #ffffff;
+	border-radius: 20px;
+	display: flex;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.contentBox .imgBx{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
+.contentBox .imgBx img{
+	position: relative;
+	max-width: 150px;
+	z-index: 1;
+	border-radius: 50%;
+}
+.contentBox .content{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 
  
@@ -140,14 +162,20 @@ video{
 			
 		<div id="page">
 			  
-
-			<div class="popup">	
-				<img src="icon.png" alt="icn" height="100px" width="100px" style="border-radius: 50px;">			
-				<h2>Gerry & Agnes Wedding</h2>
-				<p> Kepada Yth.</p>						
-				<p>Bapak/Ibu/Saudara/i</p>
-				<p>Sekalian</p>
-				<a class="ex">Buka undangan</a>
+			<div class="popup">
+				<div class="contentBox">
+					<div class="imgBx">
+						<img src="icon.png" alt="icn" >
+					</div>
+					<div class="content">
+						<div>
+						<h2>Gerry & Agnes Wedding</h2>
+						<p> Kepada Yth.</p>						
+					<p>Bapak/Ibu/Saudara/i</p>
+						<a class="ex">Buka undangan</a>
+					</div>
+					</div>
+				</div>
 			</div>
 	
   
