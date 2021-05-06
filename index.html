@@ -67,78 +67,16 @@
 	<![endif]-->
 <Style>
 .popup{
-	  margin: 0 auto;
-  max-width: 700px;
-  height: 100px;
-  background-color: #ccc;
-  border-radius: 3px;
+	 margin: 0 auto;
+ 	 max-width: 700px;
+  	height: 300px;
+  	background-color: #ccc;
+ 	 border-radius: 3px;
 	display: none;
-}
-.contentBox{
-	position: relative;
-
-	background: #ffffff;
-	border-radius: 20px;
-	display: flex;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-.contentBox .imgBx{
-	position: relative;
-	width: 100px;
-	height: 150px;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.contentBox .imgBx ::before{
-	content: '';
-	position: absolute;
-	width: 150px;
-	height: 150px;
-	background: #000;
-	
-}
-.contentBox .imgBx img{
-	position: relative;
-	max-width: 150px;
-	z-index: 1;
-	border-radius: 50%;
-}
 
-.contentBox .content{
-	position: relative;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.contentBox .content h3{
-	color: #333;
-	line-height: 1em;
-	font-weight: 300;
-	font-size: 2em;
-}
-.contentBox .content h2{
-	font-size: 1em;
-	color: maroon;
-	line-height: 1em;
-}
-@media only screen and (max-width: 479px){
-    #container2 { width: 90%; }
-}
-
-
-
-.contentBox .content a {
-	display: inline-block;
-	padding: 10px 20px;
-	background:  rgb(160, 209, 86);
-	color: black;
-	margin-top: 15px;	
-	border-radius: 10px; 
-	text-decoration: none;
-	cursor:pointer ;
-}
 
 
  
@@ -199,22 +137,13 @@ video{
 		<div id="page">
 			  
 
-			<div class="popup" id="container2">
-				<div class="contentBox">
-					<div class="imgBx">
-						<img src="icon.png" alt="icn">
-					</div>
-					<div class="content">
-						<div>
-							
-						<h2>Gerry & Agnes Wedding</h2>
-						<p> Kepada Yth.</p>						
-						<p>Bapak/Ibu/Saudara/i</p>
-							<p>Sekalian</p>
-						<a class="ex">Buka undangan</a>
-					</div>
-					</div>
-				</div>
+			<div class="popup">	
+				<img src="icon.png" alt="icn" height="100px" width="100px" style="border-radius: 50px;">			
+				<h2>Gerry & Agnes Wedding</h2>
+				<p> Kepada Yth.</p>						
+				<p>Bapak/Ibu/Saudara/i</p>
+				<p>Sekalian</p>
+				<a class="ex">Buka undangan</a>
 			</div>
 	
   
