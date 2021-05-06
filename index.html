@@ -82,27 +82,13 @@
 	display: flex;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.contentBox .imgBx{
+.imgBx{
 	position: relative;
 	width: 150px;
 	height: 400px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.contentBox .imgBx ::before{
-	content: '';
-	position: absolute;
-	width: 100px;
-	height: 150px;
-	background: #000;
-	
-}
-.contentBox .imgBx img{
-	position: relative;
-	max-width: 90px;
-	z-index: 1;
-	border-radius: 50%;
 }
 
 .contentBox .content{
@@ -193,17 +179,15 @@ video{
 		<div id="page">
 			  
 			<div class="popup">
-				<div class="contentBox">
-					<div class="imgBx">
-						<img src="icon.png" alt="icn" >
-					</div>
+				<div class="contentBox">		
 					<div class="content">
 						<div>
+						<img src="icon.png" alt="icn" >
 						<h2>Gerry & Agnes Wedding</h2>
 						<p> Kepada Yth.</p>						
 					<p>Bapak/Ibu/Saudara/i</p>
 						<a class="ex">Buka undangan</a>
-					</div>
+					
 					</div>
 				</div>
 			</div>
