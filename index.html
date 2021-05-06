@@ -66,50 +66,73 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 <Style>
-.popup{
-	position: fixed;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	display: none;
-}
-.contentBox{
-	position: relative;
-	width: 400px;
-	height: 350px;
-	background: #ffffff;
-	border-radius: 20px;
-	display: flex;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-.imgBx{
-	position: relative;
-	width: 150px;
-	height: 400px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
 }
 
-.contentBox .content{
-	position: relative;
-	width: 150px;
-	height: 400px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.container {
+  padding: 16px;
 }
-.contentBox .content h2{
-	font-size: 1em;
-	color: lightblue;
-	line-height: 1em;
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
 }
 
-.contentBox .content p {
-	font-weight: 300;
+
+/* The Modal (background) */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
 }
 
-.contentBox .content a {
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+ a {
 	display: inline-block;
 	padding: 10px 20px;
 	background: lightslategray;
@@ -176,23 +199,21 @@ video{
 	
 	<body>
 			
-		<div id="page">
+<div id="page">
+<div class="popup"
+  <div class="modal-content animate" >
+    <div class="imgcontainer">
+      <img src="icon.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+    	<h3>Gerry & Agnes Wedding</h3>
+	<h5>Kepada Yth.</h5>
+	<h5>Bapak/Ibu/Saudara/i Sekalian</h5>
+	<a class="ex">Buka undangan</a>
+    </div>
+</div>
 			  
-			<div class="popup">
-				<div class="contentBox">		
-					<div class="content">
-						<div>
-						<img src="icon.png" alt="icn" >
-						<h2>Gerry & Agnes Wedding</h2>
-						<p> Kepada Yth.</p>						
-					<p>Bapak/Ibu/Saudara/i</p>
-						<a class="ex">Buka undangan</a>
-					</div>
-					</div>
-				</div>
-			</div>
-	
-  
 
 
 <nav class="nav">
