@@ -4,11 +4,12 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
+
 	<link rel="icon" type="image/png" href="icon.png">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-	<title>The Wedding of Gerry and Agnes</title>
+	<title>| RSVP |The Wedding of Gerry and Agnes</title>
 	<!-- MS, fb & Whatsapp -->
 
 <!-- MS Tile - for Microsoft apps-->
@@ -17,9 +18,9 @@
 <!-- fb & Whatsapp -->
 
 <!-- Site Name, Title, and Description to be displayed -->
-<meta property="og:site_name" content="Saturday,3 July 2021">
+<meta property="og:site_name" content="Kamu di undang">
 <meta property="og:title" content="The Wedding of Gerry and Agnes">
-<meta property="og:description" content="Pada Hari Sabtu,3 Juli 2021">
+<meta property="og:description" content="Pada Hari Sabtu,3 juli 2021">
 
 <!-- Image to display -->
 <!-- Replace   «example.com/image01.jpg» with your own -->
@@ -34,10 +35,9 @@
 <meta property="og:image:height" content="300">
 
 <!-- Website to visit when clicked in fb or WhatsApp-->
-<meta property="og:url" content="https://gerry-agnes.github.io/">
+<meta property="og:url" content="Kamu di Undang">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
@@ -48,6 +48,9 @@
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Aladin&family=Dancing+Script:wght@600&family=Itim&family=Rouge+Script&family=Fondamento&display=swap" rel="stylesheet">
+	
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
@@ -101,7 +104,7 @@ textarea {
   resize: none;
 }
 button {
-	width: 100px;
+width: 100px;
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -118,7 +121,12 @@ button[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  text-align: center;
+  align-items: center;
+justify-content: center;
 }
+
+
 .nav {
     position: fixed;
     bottom: 0;
@@ -143,7 +151,7 @@ button[type=submit]:hover {
     font-size: 13px;
     color: #444444;
     text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
+  
     transition: background-color 0.1s ease-in-out;
 }
 
@@ -161,8 +169,8 @@ button[type=submit]:hover {
 
 </Style>
 	</head>
+	
 	<body>	
-
 		<div class="fh5co-loader"></div>
 	
 		<div id="page">
@@ -173,8 +181,7 @@ button[type=submit]:hover {
 			<div class="row">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<span>Best Wishes</span>
-						<h3 style="font-family: 'Courgette', cursive; color: rgb(194, 191, 6); font-size: 40px;">Friends Wishes</h3>
+						<h3 style="font-family: 'Fondamento', cursive; color: maroon; font-size: 40px;  font-weight: bold;">Friends Wishes</h3>
 						
 					</div>
 				</div>
@@ -216,26 +223,25 @@ button[type=submit]:hover {
 	<div id="fh5co-gallery" class="fh5co-section-gray" style="background-image: url(images/bg-form.jpg);">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h3 style="font-family: 'Courgette', cursive;">RSVP</h3>
-					<p style="color: maroon; ">Silahkan isi formulir untuk memberi tahu kami bahwa Anda akan hadir. Terima kasih </p>
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">					
 					<div class="containerfo">
+						<h1 style="font-family: 'Fondamento', cursive; color: maroon; font-weight: bold;">RSVP</h1>
+					<p style="font-family: 'Fondamento', cursive; color: rgb(0, 0, 0);">Silahkan isi formulir untuk memberi tahu kami bahwa Anda akan hadir. Terima kasih </p>
 						<div class="alert" id="alerts">
 							<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
 							<strong>Terimakasih! </strong>Nama dan Pesan anda sudah kami terima.
 						  </div>
 						  <form name="rsvp-wedding">
-							<label for="fname">Name</label>
-							<input type="text" id="fname" name="nama">
+							<label for="fname">Nama</label>
+							<input type="text" id="fname" name="nama" required>
 						
 							<label for="lname">Email</label><br>
-							<input type="email" id="lname" name="email" ><br>
+							<input type="email" id="lname" name="email" required><br>
 						
 							<label for="subject">Ucapan & Doa</label>
 							<textarea id="subject" name="pesan"  style="height:200px"></textarea>
-						
-							<button type="submit" id="kirim"  >Kirim</button>
 							<button  disabled id="loading" style="display: none;">Loading...</button>
+							<button type="submit" id="kirim" >Kirim</button>						
 						  </form>
 						</div>
 				</div>
@@ -247,65 +253,65 @@ button[type=submit]:hover {
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 				<br><br><br><br>
-				<h3 style="font-family: 'Courgette', cursive;">Lokasi</h3>
-				
-			
+				<h1 style="font-family: 'Fondamento', cursive;">Lokasi</h1>		
 			</div>
 		</div>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.24186575247!2d106.80254551852575!3d-6.573488988248961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5c6681e3b6127dc3!2sLembaga%20Alkitab%20Indonesia!5e0!3m2!1sen!2sid!4v1619831864853!5m2!1sen!2sid"  width="100%" height="500"  style="border: 50px; ;"allowfullscreen="" loading="lazy"></iframe>							
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5897157628187!2d106.80060931414118!3d-6.573351666084987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c43ba4ce7af7%3A0x5c6681e3b6127dc3!2sLembaga%20Alkitab%20Indonesia!5e0!3m2!1sid!2sid!4v1620455508758!5m2!1sid!2sid" width="100%" height="500"  style="border: 50px; ;"allowfullscreen="" loading="lazy"></iframe>							
 	
 								</div>
 		<!-- END map -->
 
-<footer id="fh5co-footer" role="contentinfo"  style="margin-bottom: 40px;">
-		<div style="background-image:url(images/footer.jpg); " >
-		<div class="container" >
-			<div class="row copyright">
-				<div class="col-md-12 text-center">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-							<h2 style="color: maroon">Gerry & Agnes</h2>
-							<p>Terima Kasih</p>
+		<footer id="fh5co-footer" role="contentinfo"  style="margin-bottom: 40px;">
+			<div style="background-image:url(images/footer.jpg);" >
+			<div class="container" >
+				<div class="row copyright">
+					<div class="col-md-12 text-center">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+								<h2 style="color: maroon; margin-top: 20px;">Gerry & Agnes</h2>
+								<p style="font-family: 'Itim', cursive; font-size: 20px; ">Terima Kasih</p>
+							</div>
 						</div>
+						<p>
+							<small class="block">&copy; 2016  HTML5. All Rights Reserved.</small> 
+							<small class="block">Designed by Aldo Sirait</small>
+						</p>
+											
 					</div>
-					<p>
-						<small class="block">&copy; 2016  HTML5. All Rights Reserved.</small> 
-						<small class="block">Designed by Aldo Sirait</small>
-					</p>
-						<ul class="fh5co-social-icons">
-							<li><a href="https://mobile.facebook.com/profile.php?id=1416440858&ref=content_filter"><i class="icon-facebook"></i>Gerry Selvano</a></li>
-							<li><a href="https://mobile.facebook.com/profile.php?id=100000120684025&ref=content_filter"><i class="icon-facebook">Agnes Sirait</i></a></li>
-							<li><a href="https://www.instagram.com/gerryselvano/"><i class="icon-instagram"></i>gerryselvano </a></li>
-							<li><a href="https://www.instagram.com/agnesssirait/"><i class="icon-instagram"></i>agnessirait</a></li>
-						</ul>					
 				</div>
 			</div>
 		</div>
-	</div>
-	</footer><br>
+		<ul class="fh5co-social-icons" style="text-align: center; padding-top: 70px;">
+			<li><a href="https://mobile.facebook.com/profile.php?id=1416440858&ref=content_filter" style="font-size: 18px;font-weight: 300;"><i class="icon-facebook" style="font-size: 18px;" ></i> Gerry Selvano</a></li>
+			<li><a href="https://mobile.facebook.com/profile.php?id=100000120684025&ref=content_filter" style="font-size: 18px;font-weight: 300;"><i class="icon-facebook"style="font-size: 18px;" ></i>Agnes Sirait</a></li>
+			<li><a href="https://www.instagram.com/gerryselvano/" style="font-size: 18px;font-weight: 300;"><i class="icon-instagram" style="font-size: 18px;"></i> gerryselvano </a></li>
+			<li><a href="https://www.instagram.com/agnesssirait/"  style="font-size: 18px;font-weight: 300;"><i class="icon-instagram" style="font-size: 18px;"></i> agnessirait</a></li>
+		</ul>	
+		</footer>
 			</div>
-		<nav class="nav">
-  <a href="index.html" class="nav__link ">
-    <i class="material-icons nav__icon">smart_display</i>
-    <span class="nav__text">Video</span>
-  </a>
-  <a href="about.html" class="nav__link ">
-    <i class="material-icons nav__icon">people</i>
-    <span class="nav__text">Couple</span>
-  </a>
-  <a href="services.html" class="nav__link">
-    <i class="material-icons nav__icon">festival</i>
-    <span class="nav__text">Event</span>
-  </a>
-  <a href="gallery.html" class="nav__link">
-    <i class="material-icons nav__icon">photo_album</i>
-    <span class="nav__text">Moment</span>
-  </a>
-  <a href="contact.html" class="nav__link nav__link--active">
-    <i class="material-icons nav__icon">group</i>
-    <span class="nav__text">RSVP</span>
-  </a>
-</nav>
+			<nav class="nav">
+				<a href="index.html" class="nav__link ">
+				  <i class="material-icons nav__icon">house</i>
+				  <span class="nav__text" style="font-family: 'Aladin', cursive; font-weight: bold;">Home</span>
+				</a>
+				<a href="about.html" class="nav__link ">
+				  <i class="material-icons nav__icon"><span class="material-icons-outlined">favorite</span></i>
+				  <span class="nav__text" style="font-family: 'Aladin', cursive; font-weight: bold;">Couple</span>
+				</a>
+				<a href="services.html" class="nav__link ">
+				  <i class="material-icons nav__icon">festival</i>
+				  <span class="nav__text" style="font-family: 'Aladin', cursive; font-weight: bold;">Event</span>
+				</a>
+				<a href="gallery.html" class="nav__link">
+				  <i class="material-icons nav__icon"><span class="material-icons-outlined">collections</span></i>
+				  <span class="nav__text" style="font-family: 'Aladin', cursive; font-weight: bold;">Moment</span>
+				</a>
+				<a href="contact.html" class="nav__link nav__link--active">
+				  <i class="material-icons nav__icon"><span class="material-icons-outlined">insert_comment</span></i>
+				  <span class="nav__text" style="font-family: 'Aladin', cursive; font-weight: bold;">RSVP</span>
+				</a>
+			  </nav>
+		
 		
 	
 
